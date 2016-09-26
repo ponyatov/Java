@@ -1,7 +1,6 @@
 .PHONY: exec
 exec: Hello.class
-	java Hello
-#	-classpath .
+	java -classpath . Hello
 %.class: %.java Makefile
 	javac $<
 #	javap -v $@ > $@.log
